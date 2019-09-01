@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMateria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Aplicaciones Moviles y SIstemas Telematicos"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtExamen" />
+
+    <TextView
+        android:id="@+id/txtExamen"
+        android:layout_width="411dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="68dp"
+        android:text="Examen Practico"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Luis Macas - Richard Ruales"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMateria" />
+
+    <EditText
+        android:id="@+id/txtBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Buscar Heroe"
+        android:inputType="textCapSentences|textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombres" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:onClick="busqueda"
+        android:text="Buscar"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
